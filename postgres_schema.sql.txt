@@ -1,0 +1,9 @@
+-- PostgreSQL schema for 'users' table
+CREATE DATABASE postgres_db;
+
+-- Connect to the database before running this
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100)
+);

@@ -1,0 +1,29 @@
+# Migration Summary Report
+
+## Overview
+
+Migrated data from MySQL (`mysql_db`, table: `users`) to PostgreSQL (`postgres_db`, table: `users`).
+
+## Migration Steps
+
+1. Created schema and sample data in MySQL.
+2. Created schema in PostgreSQL.
+3. Used Python script to transfer data row-by-row.
+
+## Data Integrity Checks
+
+- Row counts are matched before and after migration.
+- All primary keys and columns verified.
+- Manual checks performed using SQL queries.
+
+## Issues and Recommendations
+
+- No issues found for this simple table.
+- For more complex migrations (foreign keys, different data types), further mapping is needed.
+- Use automated tools like [pgloader](https://pgloader.io/) for large-scale migrations.
+
+## Result
+
+Migration completed successfully. All data from MySQL was present in PostgreSQL after migration.
+
+---

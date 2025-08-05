@@ -1,0 +1,14 @@
+-- MySQL schema for 'users' table
+CREATE DATABASE IF NOT EXISTS mysql_db;
+USE mysql_db;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100)
+);
+
+-- Sample data
+INSERT INTO users VALUES
+(1, 'Alice', 'alice@example.com'),
+(2, 'Bob', 'bob@example.com');
